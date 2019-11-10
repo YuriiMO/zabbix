@@ -22,6 +22,8 @@ RUN sed -i 's!# php_value date.timezone Europe/Riga!php_value date.timezone Euro
 
 RUN sed -i 's!# DBHost=localhost!DBHost=localhost!'  /etc/zabbix/zabbix_server.conf
 RUN sed -i 's!# DBPassword=!DBPassword=zabbix!'  /etc/zabbix/zabbix_server.conf
+
+ADD data.sh /
 RUN bash -c "/data.sh"
 RUN rm -r zabbix-4.0.14
 
