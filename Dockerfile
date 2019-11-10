@@ -40,4 +40,5 @@ WORKDIR /var/lib/zabbix
 
 COPY ["run.sh", "/usr/bin/"]
 
+
 ENTRYPOINT ["/sbin/tini", "--", "/usr/bin/run.sh"]
