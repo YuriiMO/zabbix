@@ -1,5 +1,4 @@
-# zabbix
-zabbix in docker
+# zabbix in docker
 
 docker run -d -p 80:80 selest1n/zabix:0.1.0
 
