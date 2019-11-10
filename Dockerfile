@@ -34,6 +34,7 @@ RUN chown zabbix:zabbix /var/run/zabbix
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
+
 EXPOSE 80
 
 WORKDIR /var/lib/zabbix
