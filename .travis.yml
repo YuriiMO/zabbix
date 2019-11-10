@@ -6,7 +6,8 @@ branches:
     - master
 before_install:
   - docker build -t selest1n/zabbix:0.1.0 .
-  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  - docker push -t selest1n/zabbix:0.1.0
-script:
-  - bundle exec rake test
+deploy:
+  provider: script
+  script: bash docker_push
+  on:
+    branch: master
