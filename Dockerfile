@@ -27,7 +27,6 @@ ADD data.sh /
 RUN bash -c "/data.sh"
 RUN rm -r zabbix-4.0.14
 
-RUN mkdir /var/www/html/zabbix
 RUN ln -s usr/share/zabbix /var/www/html/
 
 RUN mkdir /var/run/zabbix
