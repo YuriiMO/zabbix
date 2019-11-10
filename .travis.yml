@@ -7,7 +7,7 @@ branches:
 script:
   - docker build -t selest1n/zabbix:0.1.1 .
 deploy:
-  - provider: script
+  provider: script
   script: bash docker_push
   on:
     branch: master
