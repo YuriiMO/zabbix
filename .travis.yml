@@ -4,9 +4,8 @@ services:
 branches:
   only:
     - master
-before_install:
+script:
   - docker build -t selest1n/zabbix:0.1.1 .
-
 deploy:
   provider: script
   script: bash docker_push
