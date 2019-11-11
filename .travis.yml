@@ -5,8 +5,10 @@ branches:
   only:
     - master
 script:
+  # собираем образ zabbix
   - docker build -t selest1n/zabbix:0.1.2 .
 deploy:
+  # скриптом отправляем собраный образ в докер хаб
   provider: script
   script: bash docker_push
   on:
