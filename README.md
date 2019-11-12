@@ -5,7 +5,7 @@ zabbix-server
 /var/lib/mysql  #базы данных mysql      
 /var/lib/zabbix #рабочий каталог zabbix         
 /usr/lib/zabbix #пользовательские скрипты          
-нужно вынести в найловую систему хост машины
+нужно вынести в файловую систему хост машины
 
 Для запуска:
 docker pull selest1n/zabbix:0.1.2
