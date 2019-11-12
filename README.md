@@ -7,8 +7,8 @@ zabbix-server
 /usr/lib/zabbix #пользовательские скрипты          
 нужно вынести в файловую систему хост машины
 
-Для запуска:
-docker pull selest1n/zabbix:0.1.2
+Для запуска:        
+docker pull selest1n/zabbix:0.1.2         
 docker run -d -p 80:80 -p 10051:10051 selest1n/zabix:0.1.2
 
 http://0.0.0.0/zabbix
