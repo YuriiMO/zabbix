@@ -13,10 +13,10 @@ docker run -d -p 80:80 -p 10051:10051 selest1n/zabix:0.1.2
 
 http://0.0.0.0/zabbix
 
-первоначальная конфигурация доступа к базе 
-mysql user : zabbix
+первоначальная конфигурация доступа к базе        
+mysql user : zabbix         
 mysql password: zabbix
 
-Вход на веб панель
-login: Admin
+Вход на веб панель          
+login: Admin          
 password: zabbix
