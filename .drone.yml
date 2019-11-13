@@ -1,0 +1,14 @@
+---
+ kind: pipeline
+ type: docker
+ name: default
+steps:
+ - name: zabbix
+ image: ubuntu
+trigger:
+ branch:
+ - master
+ event:
+ - push
+commands:
+ - docker build -t selest1n/zabbix:0.1.2 .
