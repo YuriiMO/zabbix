@@ -4,10 +4,10 @@ name: default
 steps:
   - name: build zabbix image
     image: plugins/docker
-      settings:
-    username: selest1n
-    password: Rg%!g8L%RW@T=W,
-    repo: selest1n/zabbix
-    tags:
-      - latest
-      - '0.1.5'
+    settings:
+      username: selest1n
+      password: Rg%!g8L%RW@T=W,
+      repo: selest1n/zabbix
+      tags:
+        - latest
+        - '0.1.5'
