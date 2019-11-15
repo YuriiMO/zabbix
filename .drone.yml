@@ -1,11 +1,13 @@
+---
 kind: pipeline
+type: docker
 name: default
 
 steps:
   - name: build zabbix image
     image: plugins/docker
-    settings:
-      custom_dns: 10.0.0.1
+#    settings:
+#      custom_dns: 10.0.0.1
 #    volumes:
 #      - name: docker_sock
 #        path: /var/run/docker.sock
