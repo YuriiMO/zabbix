@@ -4,9 +4,9 @@ name: default
 steps:
   - name: build zabbix image
     image: plugins/docker
-#    volumes:
-#      - name: docker_sock
-#        path: /var/run/docker.sock
+    volumes:
+      - name: docker_sock
+        path: /var/run/docker.sock
     commands:
       - docker build -t selest1n/zabbix:0.1.4 .
       - bash docker_push
