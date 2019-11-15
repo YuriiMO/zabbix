@@ -5,6 +5,8 @@ steps:
 
   - name: build zabbix image
     image: docker:latest
+    settings:
+      - custom_dns:10.0.0.1
     volumes:
       - name: docker_sock
         path: /var/run/docker.sock
